@@ -1,0 +1,17 @@
+{
+  "name": "autoclose",
+  "main": "./lib/autoclose",
+  "version": "0.0.1",
+  "description": "close html-like tag in all file.",
+  "keywords": [
+    "atom",
+    "autoclose"
+  ],
+  "repository": "https://github.com/awaw00/autoclose",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
