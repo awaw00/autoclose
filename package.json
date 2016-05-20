@@ -1,7 +1,7 @@
 {
   "name": "autoclose",
   "main": "./lib/autoclose",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "close html-like tag in all file.",
   "keywords": [
     "atom",
@@ -12,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
