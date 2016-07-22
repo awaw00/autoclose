@@ -50,7 +50,7 @@ module.exports =
     lineAfter = buffer.getLines()[end.row]
     content = lineBefore.substr(lineBefore.lastIndexOf('<')) + '\n' + lineAfter
     regex = ///
-              ^.*\<([a-zA-Z-_]+)(\s.+)?\>
+              ^.*\<([a-zA-Z0-9-_]+)(\s.+)?\>
               \n
               \s*\<\/\1\>.*
             ///
@@ -77,7 +77,7 @@ module.exports =
     if previousTagIndex < 0
       return
 
-    tagName = strBefore.match(/^.*\<([a-zA-Z-_.]+)[^>]*?/)?[1]
+    tagName = strBefore.match(/^.*\<([a-zA-Z0-9-_.]+)[^>]*?/)?[1]
     if !tagName then return
 
     if text is '>'
